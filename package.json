@@ -2,14 +2,32 @@
   "name": "discord-bot",
   "version": "1.0.0",
   "description": "Discord bot for SitePoint",
-  "main": "index.js",
   "scripts": {
+    "start": "nodemon --resolveJsonModule",
+    "lint:fix": "eslint --fix --ext ts,tsx ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Michiel Mulders",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.5.1",
-    "dotenv": "^8.2.0"
+    "@aeroware/aeroclient": "^3.6.2",
+    "axios": "^0.21.1",
+    "jira-client": "^6.22.0",
+    "js-base64": "^3.6.1"
+  },
+  "devDependencies": {
+    "@types/jira-client": "^6.21.2",
+    "@types/node": "^16.4.8",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "nodemon": "^2.0.12",
+    "ts-dotenv": "^0.8.3",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
   }
 }
