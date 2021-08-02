@@ -1,3 +1,3 @@
 import jira from '../jiraApi'
 
-export const getSprintList = jira.getAllSprint
+export const getSprintList = jira.getAllSprints
