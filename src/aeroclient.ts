@@ -1,7 +1,7 @@
-import AereoClient from '@aeroware/aeroclient'
-import * as aereoclientConfig from '../aeroclient.json'
+import AeroClient from '@aeroware/aeroclient'
+import * as AeroClientConfig from '../aeroclient.json'
 
-const client = new AereoClient(aereoclientConfig, {})
+const client = new AeroClient(AeroClientConfig, {})
 
 client.on('ready', () => {
   console.info(client?.user?.tag)
